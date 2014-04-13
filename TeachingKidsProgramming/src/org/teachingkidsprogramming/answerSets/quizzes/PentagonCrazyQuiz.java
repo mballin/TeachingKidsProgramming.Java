@@ -1,5 +1,8 @@
 package org.teachingkidsprogramming.answerSets.quizzes;
 
+import org.teachingextensions.logo.ColorWheel;
+import org.teachingextensions.logo.Colors;
+import org.teachingextensions.logo.Tortoise;
 import org.teachingkidsprogramming.answerSets.quizzes.graders.PentagonCrazyQuizGrader;
 import org.teachingkidsprogramming.answerSets.quizzes.graders.PentagonQuizAdapter;
 
@@ -7,25 +10,26 @@ public class PentagonCrazyQuiz extends PentagonQuizAdapter
 {
   public void question1()
   {
-    // Question 1 
-    //   thread (recipe below) 
-    //   ------------- Recipe for thread
-    //       that moves the tortoise 6 pixels
-    //   ------------- End of thread recipe
+    thread();
+  }
+  private void thread()
+  {
+    Tortoise.move(6);
   }
   public void question2()
   {
-    //        Do the following 76 times
-    //           call stitch
-    //        Repeat
+    for (int i = 1; i <= 76; i++)
+    {
+      stitch();
+    }
   }
   public void question3()
   {
-    //        Add lime to the color wheel
+    ColorWheel.addColor(Colors.Greens.Lime);
   }
   public void question4()
   {
-    //        Add red to the color wheel
+    ColorWheel.addColor(Colors.Reds.Red);
   }
   public static void main(String[] args)
   {

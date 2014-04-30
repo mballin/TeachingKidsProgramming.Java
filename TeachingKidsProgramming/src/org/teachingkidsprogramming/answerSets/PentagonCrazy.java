@@ -14,7 +14,8 @@ public class PentagonCrazy
   }
   private static void drawPentagon()
   {
-    for (int i = 1; i <= 200; i++)
+    int i = 1;
+    for (; i <= 200;)
     {
       Number side;
       adjustPen();
@@ -22,6 +23,7 @@ public class PentagonCrazy
       Tortoise.move(side);
       Tortoise.turn(360 / 5);
       Tortoise.turn(1);
+      i++;
     }
   }
   private static void adjustPen()

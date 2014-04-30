@@ -15,8 +15,6 @@ public class FourSquare
       Tortoise.turn(90);
     }
   }
-  // Related Videos:
-  // Sub recipe-> Method : http://youtu.be/C6fnqjceVcs
   private static void drawSquare()
   {
     for (int i = 1; i <= 4; i++)
